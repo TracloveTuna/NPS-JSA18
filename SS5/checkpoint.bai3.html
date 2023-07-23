@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="i4">
+        <input type="text" name="email" placeholder="email">
+        <br>
+        <input type="text" name="age" placeholder="Tuổi">
+        <br>
+        <input type="text" name="name" placeholder="Họ và tên">
+        <br>
+        <button type="submit">nộp</button>
+    </form>
+    <script>
+        let form = document.getElementById("i4")
+        form.addEventListener("submit", function (event) {
+            event.preventDefault()
+            let User={
+                email: form.email.value,
+                age: form.age.value,
+                name: form.name.value,
+            
+            }
+          localStorage.getItem("data", JSON.stringify("data"))
+          console.log();
+
+        })
+        
+    </script>
+</body>
+
+</html>
