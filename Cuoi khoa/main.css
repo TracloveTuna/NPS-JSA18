@@ -1,6 +1,161 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    border: none;
+}.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    align-items: center;
 }
+body{
+    background-image: url(https://lsvn.vn/storage/uploads/photos/1013/02/60ff564d4588e.jpg);
+    backdrop-filter: blur(1px);;
+    width:100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    
+    
+}
+img{
+    width: 70px;
+}
+.nav-page{
+   
+    display: flex;
+}
+.er{
+    padding: 10px 50px 10px 50px;
+    
+    font-size: 20px;
+    
+
+   
+    
+}
+.er :hover{
+    background-color: crimson;
+    color: black;
+
+}
+
+
+a{
+    color: aliceblue;
+}
+.intro{
+    color: yellow;
+    justify-content: center;
+    align-items:center;
+    display:flex;
+    padding-top: 200px;
+    font-size: larger;
+
+}
+.intro2{
+    color: yellow;
+    justify-content: center;
+    align-items:center;
+    display:flex;
+    padding-top: 10px;
+    font-size: xx-large;
+    margin-bottom: 50px;
+    
+}
+.content{
+    background-color: white;
+    padding-bottom: 1000px;
+    
+}
+.in4{
+    padding-left: 130px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: x-large;
+   
+    
+}
+.in4b{
+    width: 80%;
+    background-color: rgb(217, 254, 233);
+    display: flex;
+    vertical-align: middle;
+    padding: 10px;
+    color: cadetblue;
+    margin: 0px auto;
+
+}
+.left{
+    width: 200px;
+}
+.in4a{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    vertical-align: middle;
+    padding: 10px;
+    color: cadetblue;
+    margin: 0px auto;
+
+
+}
+.container {
+    color: white;
+    background-image: url("https://trongdoandoi.vn/wp-content/uploads/2022/11/co-nuoc-viet-nam-ben-dep.jpg");
+    width: 450px;
+    margin: 0px auto;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    
+  }
+.input{
+    padding-top: 20px;
+    font-size: larger;
+}
+.input1{
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px auto;
+    font-size: larger;
+}
+.input2{
+ 
+    width: 370px;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 11px;
+    font-size: larger;
+    color:white;
+    background-color: rgb(83, 146, 249);
+}
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .h1{
+    font-size: 40px;
+
+  }
+  .dn2{
+    font-size: larger;
+  }
+  .center{
+    text-align: center;
+  }
+  .camket{
+    width: 400px;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
