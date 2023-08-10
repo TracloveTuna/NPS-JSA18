@@ -144,10 +144,12 @@ a{
   }
   .h1{
     font-size: 40px;
+    padding-left: 10px;
 
   }
   .dn2{
     font-size: larger;
+    padding-left: 10px;
   }
   .center{
     text-align: center;
@@ -158,4 +160,57 @@ a{
     padding-top: 20px;
     padding-bottom: 10px;
   }
-  
+  .profile-name{
+    background-color: white;
+    width: 60%;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+  }
+  .change-name{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  .avatar{
+    display: flex;
+    align-items: center;
+
+  }
+  .hovaten{
+    margin-left: 5px;
+  }
+  .thong-tin-nguoi-dung{
+    width: 60%;
+    display: flex;
+    margin: 0px auto;
+    font-size: xx-large;
+    padding: 80px 0px 30px 0px;
+  }
+  .email{
+    padding: 20px 20px 0px 20px;
+  }
+  .email-contain{
+    display: block;
+  }
+  .com{
+    padding: 20px;
+  }
+  .sdt-input{
+    width:100%;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.233);
+  }
+  .text-sdt{
+    padding: 10px 20px 10px 20px;
+  }
+  .profile-sdt{
+        padding: 10px 0px 10px 0px;
+  }
+  .profile-add{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
