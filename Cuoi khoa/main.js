@@ -54,3 +54,22 @@ else{
         }
         alert('Đăng nhập thất bại')
 }
+const signUp = () => {
+    let emil = document.querySelector('.input1').value;
+    let pss = document.querySelector('.input9').value;
+    let name = document.querySelector('input8').value;
+    let cpass = document.querySelector('input10').value;
+    if (emil==''|| pss==''||name==''||cpass==''){
+        alert('Vui lòng nhập đầy đủ thông tin')
+    }
+    else{
+        let UserNew={
+            emil,
+            pss,
+            name,
+            id: dataUsers.length+1
+        }
+        dataUsers.push(UserNew);
+        localStorage.setItem("dataUsers", JSON.stringify(dataUsers))
+    }
+}
