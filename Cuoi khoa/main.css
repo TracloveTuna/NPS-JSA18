@@ -30,7 +30,7 @@ img{
     display: flex;
 }
 .er{
-    padding: 10px 50px 10px 50px;
+    
     
     font-size: 20px; 
 }
@@ -41,6 +41,8 @@ img{
 }
 a{
     color: aliceblue;
+    padding: 10px 50px 10px 50px;
+
 }
 .intro{
     color: yellow;
@@ -114,7 +116,7 @@ a{
     padding-top: 20px;
     font-size: larger;
 }
-.input1{
+.input1, .input3 {
     width: 350px;
     padding: 10px;
     border-radius: 5px;
@@ -154,6 +156,9 @@ a{
     margin: 0px auto;
     padding-top: 20px;
     padding-bottom: 30px;
+  }
+  .camket a{
+    padding: 0px;
   }
   .profile-name{
     background-color: white;
