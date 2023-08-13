@@ -16,26 +16,27 @@
         
             </div>
             <div class="er">
-                <a href="./search.html"> Địa điểm thăm quan</a>
+                <a href="./main.html"> Địa điểm thăm quan</a>
             </div>
         
-            <div class="nav-page" >
+            <div id="profile-button" >
                 
-                <div class="er"><a href="./login.html">Đăng nhập</a></div>
-               <div class="er"> <a href="./profile.html">profile</a></div>
                 
                 </div>
             </div>
     </div>
     
-    <div class="intro">
-        <h1>Bạn muốn đi đâu trong Quốc Khánh!!!</h1>
+    <div class="intro background-img">
+        <h1>
+            <span>Bạn muốn đi đâu trong Quốc Khánh!!!</span>
+            <br/>
+            <span style="font-size: xx-large;">ghé các địa điểm thăm quan ngay thôi</span>
+        </h1>
         
         
     </div>
-    <div class="intro2"><p>ghé các địa điểm thăm quan ngay thôi</p></div>
     <div class="content">
-        <div class="in4">thông tin nhanh về Việt Nam</div>
+        <div class="in4">Thông tin nhanh về Việt Nam</div>
         <div class="in4b">
             <div class="left">nơi ở</div>
             <div class="right">70,426 chỗ</div>
@@ -55,5 +56,14 @@
         
 
     </div>
+
+    <script>
+      const currentUser = localStorage.getItem("currentUser");
+      document.querySelector("#profile-button").innerHTML = currentUser
+        ? `<a onclick="localStorage.removeItem('currentUser');location.reload()">${
+            JSON.parse(currentUser).email
+          } (Đăng xuất)</a>`
+        : ` <a href="./register.html">Đăng Nhập / Đăng Ký</a>`;
+    </script>
 </body>
 </html>

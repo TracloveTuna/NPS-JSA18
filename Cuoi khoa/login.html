@@ -9,7 +9,7 @@
     <script src="./main.js"></script>
 </head>
 
-<body>
+<body class="background-img">
     <div class="nav">
         <div class="fav">
             <a href="./main.html"><img src="./fapicon.png" alt=""></a>
@@ -22,8 +22,7 @@
 
         <div class="nav-page">
 
-            <div class="er"><a href="./login.html">Đăng nhập</a></div>
-            <div class="er"> <a href="./profile.html">profile</a></div>
+            <div class="er"><a href="./register.html">Đăng ký</a></div>
 
         </div>
     </div>
@@ -36,13 +35,13 @@
             <div class="h1">Đăng nhập</div>
             <div class="dn2">Để đảm bảo cho các quyền lợi và sự thoải mái của bạn, vui lòng đăng nhập</div>
             <div class="center">
-                <div class="sign">
+                <form class="sign">
                     <div class="input">Email</div>
-                    <input type="text" placeholder="abc@gmail.com" width="350px" class="input1">
+                    <input required name="email" type="text" placeholder="abc@gmail.com" width="350px" class="input1">
                     <div class="input">Mật Khẩu</div>
-                    <input type="password" placeholder="password" class="input3">
+                    <input required name="password" type="text" placeholder="password" class="input1">
                     <br>
-                    <button type="submit" class="input2" onclick="SignIn()">Đăng nhập</button>
+                    <button type="submit" class="input2">Submit</button>
 
                     <div class="camket">
                         khi đăng nhập, tôi đồng ý với
@@ -54,7 +53,7 @@
                             <div class="regis" >nếu bạn chưa có tài khoản, hãy bấm <a href="./register.html" style="color:rgb(83, 146, 249);">vào đây</a></div>
                     </div>
                     
-                </div>
+                </form>
 
 
             </div>
@@ -62,6 +61,37 @@
         </div>
     </div>
 
+    <script>
+        let form = document.querySelector("form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  if (!localStorage.getItem("users")) {
+    alert("No user found");
+  } else {
+    let users = JSON.parse(localStorage.getItem("users"));
+
+    let email = form.email;
+    let password = form.password;
+
+    let existingUser = users.find(
+      (index) =>
+        index.email === email.value.trim() &&
+        index.password === password.value.trim()
+    );
+
+    if (existingUser) {
+      localStorage.setItem("currentUser", JSON.stringify(existingUser));
+
+      location.href = "./main.html";
+    } else {
+      alert("Email or password is incorrect");
+    }
+  }
+});
+
+    </script>
+
 </body>
 
-</html>
+</html> 
