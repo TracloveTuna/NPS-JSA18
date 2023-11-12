@@ -1,0 +1,14 @@
+{
+    "liveServer.settings.port": 5501,
+    // cài đặt font: Jetbrains cho vscode
+  "editor.fontSize": 14,
+  "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontLigatures": true,
+  // dòng này là viết toán tử đẹp.
+
+  // animation cho vscode
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth",
+  //
+  "editor.bracketPairColorization.enabled": true,
+}
